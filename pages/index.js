@@ -47,7 +47,7 @@ export default function Home() {
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/tamirfaria/aluraquiz-base"/>
+      <GitHubCorner projectUrl="https://github.com/tamirfaria/imersao-react-alura"/>
     </QuizBackground>
   );
 };
