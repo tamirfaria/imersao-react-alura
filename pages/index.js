@@ -32,17 +32,16 @@ export default function Home() {
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>Lorem ipsum dolor sit.</h1>
+            <h1>Quiz Hora de Aventura</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Sed venenatis nisi id commodo laoreet.</p>
+            <p>Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?</p>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <h1>Sed varius tellus sed iaculis euismod.</h1>
-            <p>Curabitur eu ex dignissim, laoreet elit sed, laoreet arcu.</p>
+            <p><i>"Hora de Aventura é um desenho animado criada por Pendleton Ward. A série segue as aventuras de Finn, o garoto humano e Jake, um cão com poderes que lhe permitem alterar a forma e tamanho".</i></p>
           </Widget.Content>
         </Widget>
         <Footer />
