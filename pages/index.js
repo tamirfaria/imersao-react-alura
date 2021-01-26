@@ -32,7 +32,7 @@ export default function Home() {
         <title>Quiz Hora de Aventura</title>
         <meta property="og:image" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg"/>
         <meta property="og:title" content="Quiz Hora de Aventura" key="title" />
-        <meta property="og:description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?" key="description" />
+        <meta property="og:description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?"/>
       </Head>
       <QuizLogo />
       <QuizContainer>
