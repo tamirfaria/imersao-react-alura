@@ -24,15 +24,14 @@ export const QuizContainer = styled.div`
     padding: 15px;
   };
 `;
-
-export default function Home() {
+export default function Quiz() {
   return (
-    <QuizBackground backgroundImage={db.bg}>
-      <Head />
-      <QuizLogo />
-      <QuizContainer>
-        <Widget>
-          <Widget.Header>
+  <QuizBackground backgroundImage={db.bgQuiz}>
+    <Head />
+    <QuizLogo />
+    <QuizContainer>
+      <Widget>
+      <Widget.Header>
             <h1>Quiz Hora de Aventura</h1>
           </Widget.Header>
           <Widget.Content>
@@ -42,7 +41,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <p><i>"Hora de Aventura é um desenho animado criada por Pendleton Ward. A série segue as aventuras de Finn, o garoto humano e Jake, um cão com poderes que lhe permitem alterar a forma e tamanho".</i></p>
+            <p><i>"PÁGINA EM CONSTRUÇÃO".</i></p>
           </Widget.Content>
             <button style={{
               backgroundColor: '#f50057',
@@ -51,7 +50,7 @@ export default function Home() {
               padding: '10px',
 
             }}>
-              <a href="/quiz"
+              <a href="/"
                 style={{
                   textDecoration: 'none',
                   color: '#ffffff',
@@ -59,7 +58,7 @@ export default function Home() {
                   fontSize: '14px',                  
                 }}
               >
-                Bora para o Quiz
+                Voltar pra Home
               </a>
             </button>
         </Widget>
@@ -68,4 +67,4 @@ export default function Home() {
       <GitHubCorner projectUrl="https://github.com/tamirfaria/imersao-react-alura"/>
     </QuizBackground>
   );
-};
+}
