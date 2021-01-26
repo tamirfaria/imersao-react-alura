@@ -5,7 +5,7 @@ import Footer from '../src/components/Footer/index.js';
 import GitHubCorner from '../src/components/GitHubCorner/index.js';
 import QuizBackground from '../src/components/QuizBackground/index.js';
 import QuizLogo from '../src/components/QuizLogo/index.js';
-import Head from '../src/components/Head/index.js';
+import Head from 'next/head';
 
 const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -28,7 +28,11 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head />
+      <Head>
+        <title>Quiz Hora de Aventura</title>
+        <meta property="og:image" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg"/>
+        <meta property="og:title" content="Quiz Hora de Aventura" key="title" />
+      </Head>
       <QuizLogo />
       <QuizContainer>
         <Widget>
