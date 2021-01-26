@@ -5,7 +5,7 @@ import Footer from '../src/components/Footer/index.js';
 import GitHubCorner from '../src/components/GitHubCorner/index.js';
 import QuizBackground from '../src/components/QuizBackground/index.js';
 import QuizLogo from '../src/components/QuizLogo/index.js';
-
+import Head from '../src/components/Head/index.js'
 
 const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -28,6 +28,7 @@ export const QuizContainer = styled.div`
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
+      <Head />
       <QuizLogo />
       <QuizContainer>
         <Widget>
