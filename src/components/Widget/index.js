@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import styled from 'styled-components';
 
 const Widget = styled.div`
@@ -22,17 +23,18 @@ p {
 `;
 
 Widget.Content = styled.div`
-padding: 24px 32px 32px 32px;
+padding: 24px 32px 32px 24px;
+
 & > *:first-child {
   margin-top: 0;
-}
+};
 & > *:last-child {
   margin-bottom: 0;
-}
+};
 ul {
   list-style: none;
   padding: 0;
-}
+};
 `;
 
 Widget.Header = styled.header`

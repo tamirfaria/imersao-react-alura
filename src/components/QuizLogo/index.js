@@ -1,6 +1,8 @@
-import styled from 'styled-components';
-
+/* eslint-disable linebreak-style */
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable linebreak-style */
 import React from 'react';
+import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 function Logo({ className }) {

@@ -1,17 +1,42 @@
+/* eslint-disable react/jsx-no-bind */
+/* eslint-disable no-console */
+/* eslint-disable func-names */
+/* eslint-disable max-len */
+import React from 'react';
 import styled from 'styled-components';
-import db from '../db.json';
-import Widget from '../src/components/Widget/index.js';
-import Footer from '../src/components/Footer/index.js';
-import GitHubCorner from '../src/components/GitHubCorner/index.js';
-import QuizBackground from '../src/components/QuizBackground/index.js';
-import QuizLogo from '../src/components/QuizLogo/index.js';
 import Head from 'next/head';
+import { useRouter } from 'next/router';
+import db from '../db.json';
+import Widget from '../src/components/Widget';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import QuizBackground from '../src/components/QuizBackground';
+import QuizLogo from '../src/components/QuizLogo';
 
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: cover;
-  background-position: center;
+export const Input = styled.input`
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  border: 1px solid ${({ theme }) => theme.colors.primary};
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  color: #FFFFFF;
+  padding: 10px;
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 4px;
+`;
+
+export const Button = styled.button`
+  background-color: ${({ theme }) => theme.colors.primary};
+  border: 1px solid ${({ theme }) => theme.colors.mainBg};
+  color: #ffffff;
+  padding: 10px;
+  margin: 24px auto;
+  font-size: bold;
+  width: 100%;
+  border-radius: 4px;
+
 `;
 
 export const QuizContainer = styled.div`
@@ -26,51 +51,50 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+  console.log('retorno do useState', name, setName);
+
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Head>
-        <title>Quiz Hora de Aventura</title>
-        <meta property="og:image" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg"/>
-        <meta property="og:title" content="Quiz Hora de Aventura" key="title" />
-        <meta property="og:description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?"/>
-      </Head>
-      <QuizLogo />
+      <Head />
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Quiz Hora de Aventura</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?</p>
+            <p>Teste todos seus conhecimentos sobre Finn, o humano e seu fiel escudeiro, Jake!</p>
+          </Widget.Content>
+          <Widget.Content>
+            <form onSubmit={function (event) {
+              event.preventDefault();
+              router.push(`/quiz?name=${name}`);
+            }}
+            >
+              <Input
+                onChange={function (event) {
+                  setName(event.target.value);
+                }}
+                placeholder="Fala ai seu nome!"
+              />
+              <Button type="submit" disabled={name.length === 0}>
+                Bora pro quiz!
+              </Button>
+            </form>
           </Widget.Content>
         </Widget>
 
         <Widget>
           <Widget.Content>
-            <p><i>"Hora de Aventura é um desenho animado criada por Pendleton Ward. A série segue as aventuras de Finn, o garoto humano e Jake, um cão com poderes que lhe permitem alterar a forma e tamanho".</i></p>
+            <p><i>Hora de Aventura é um desenho animado criada por Pendleton Ward.</i></p>
+            <p><i>A série segue as aventuras de Finn, o garoto humano e Jake,um cão com poderes que lhe permitem alterar a forma e tamanho.</i></p>
           </Widget.Content>
-            <button style={{
-              backgroundColor: '#f50057',
-              margin: '0 30px',
-              marginBottom: '10px',
-              padding: '10px',
-
-            }}>
-              <a href="/quiz"
-                style={{
-                  textDecoration: 'none',
-                  color: '#ffffff',
-                  fontWeight: 'bold',
-                  fontSize: '14px',                  
-                }}
-              >
-                Bora para o Quiz
-              </a>
-            </button>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/tamirfaria/imersao-react-alura"/>
+      <GitHubCorner projectUrl="https://github.com/tamirfaria/imersao-react-alura" />
     </QuizBackground>
   );
-};
+}
