@@ -9,7 +9,7 @@
         "image": "https://media.giphy.com/media/pO4UHglOY2vII/giphy.gif",
         "title": "Qual o nome do \"robô video-game\" amigo de Finn e Jake ?",
         "description": "Dica: A origem de seu nome é a frase \"Be More\".",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
           "Wall-E",
           "R2-D2",
@@ -20,8 +20,8 @@
       {
         "image": "https://media.giphy.com/media/sIE0hveuiwCNG/giphy.gif",
         "title": "Como se chama o reino governado pela Princesa Jujuba?",
-        "description": "A princesa mais doce (porém nem tanto) da Terra de Ooo.",
-        "answer": 1,
+        "description": "Se morasse no Brasil, provavelmente Princesa Jujuba seria uma das cientistas do Butantan.",
+        "answer": 0,
         "alternatives": [
            "Reino Doce",
            "Vila Marshmallow",
@@ -31,110 +31,107 @@
       },
       {
         "image": "https://media.giphy.com/media/hfZ9oWRkkZ9YY/giphy.gif",
-        "title": "",
-        "description": "",
-        "answer": 0,
+        "title": "Qual o intrumento musical tocado por Marceline?",
+        "description": "Será que Marceline \"toca Raul\"?",
+        "answer": 2,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Uma guitarra em forma de foice",
+           "Uma gaita de fole flamejante",
+           "Um contrabaixo em forma de machado",
+           "Uma harpa demoníaca"
         ]
       },
       {
         "image": "https://media.giphy.com/media/1RxUgQKhpgYYo/giphy.gif",
-        "title": "",
-        "description": "",
-        "answer": 0,
+        "title": "Qual a unica forma de \"curar\" os caroços da espécie da Princesa Caroço?",
+        "description": "Ai meu caroço...",
+        "answer": 3,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Comendo a torta de maça de Dona Tromba",
+           "Seguindo as instruções do Enquirídio, o manual do herói",
+           "Casando-se com o Rei Gelado",
+           "Sentando em cima de uma esfera branca da Terra do Caroço"
         ]
       },
       {
         "image": "https://media.giphy.com/media/IMSq59ySKydYQ/giphy.gif",
-        "title": "",
+        "title": "Além de falar, Jake possui uma característica incomum à cães. Qual é ela?",
         "description": "",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Jake pode mudar de cor facilmente",
+           "Ele pode se esticar e alterar seu tamanho quando quiser",
+           "Jake possui poderes telecinéticos",
+           "Ele consegue identificar as cores através do olfato"
         ]
       },
       {
         "image": "https://media.giphy.com/media/L2UdIWuCRbUL6/giphy.gif",
-        "title": "",
+        "title": "Qual o idioma falado por Lady Íris?",
         "description": "",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Coreano",
+           "Yorubá",
+           "Tupi-Guarani",
+           "Russo"
         ]
       },
       {
         "image": "https://media.giphy.com/media/NplgHMpdHweyY/giphy.gif",
-        "title": "",
+        "title": "Como nasceu Limãograb?",
         "description": "",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "De uma árvore mágica do Condado de Limãograb",
+           "Ele foi a primeira experiencia da Princesa Jujuba que deu errado",
+           "Através de uma maldição de Lich sobre um Lorde Viajante",
+           "Ele é a imagem de Finn refletida pelo multiverso da Terra de Ooo"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FBIII8M4IDDi/giphy.gif",
-        "title": "",
+        "title": "Antes de ser um pinguim, qual era a forma de Gunter?",
         "description": "",
-        "answer": 0,
+        "answer": 3,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Antes de se tornar servo do Rei Gelado era um cubo de gelo",
+           "No primeiro episódio Gunter aparece como um forasteiro",
+           "Gunter sempre possuiu a forma de pinguim",
+           "Originalmente era um monstro que dominava planetas chamado Orgalorg"
         ]
       },
       {
         "image": "https://media.giphy.com/media/Om2E6LgIWy8GA/giphy.gif",
-        "title": "",
+        "title": "Qual a maior motivação do Rei Gelado?",
         "description": "",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Conseguir uma esposa",
+           "Dominar a Terra de Ooo",
+           "Transformar o Reino Doce em um reino gelado",
+           "Destruir Finn e Jake"
         ]
       },
       {
         "image": "https://media.giphy.com/media/BdeZCL5fkf3SU/giphy.gif",
-        "title": "",
+        "title": "Princesa Caroço possuia um namorado. Qual o nome dele?",
         "description": "",
-        "answer": 0,
+        "answer": 2,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "Tony",
+           "James",
+           "Brad",
+           "Geraldo"
         ]
       },
       {
         "image": "https://media.giphy.com/media/9sVS967nejlqU/giphy.gif",
-        "title": "",
+        "title": "Parabéns, você terminou o Quiz!",
         "description": "",
         "answer": 0,
         "alternatives": [
-           "",
-           "",
-           "",
-           ""
+           "VER RESULTADO"
         ]
       }
       
