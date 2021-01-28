@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }) {
         <title>Quiz Hora de Aventura</title>
         <meta name="title" content="Quiz Hora de Aventura" />
         <meta name="description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?" />
+        <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/bmo.png" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -54,6 +55,7 @@ export default function App({ Component, pageProps }) {
         <meta property="twitter:title" content="Quiz Hora de Aventura" />
         <meta property="twitter:description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?" />
         <meta property="twitter:image" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg" />
+
       </Head>
       <ThemeProvider theme={Theme}>
         <GlobalStyle />

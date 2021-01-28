@@ -6,36 +6,150 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://media.giphy.com/media/pO4UHglOY2vII/giphy.gif",
+        "title": "Qual o nome do \"robô video-game\" amigo de Finn e Jake ?",
+        "description": "Dica: A origem de seu nome é a frase \"Be More\".",
+        "answer": 3,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Wall-E",
+          "R2-D2",
+          "BMO",
+          "EVA"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/sIE0hveuiwCNG/giphy.gif",
+        "title": "Como se chama o reino governado pela Princesa Jujuba?",
+        "description": "A princesa mais doce (porém nem tanto) da Terra de Ooo.",
+        "answer": 1,
+        "alternatives": [
+           "Reino Doce",
+           "Vila Marshmallow",
+           "Cidade Açucarada",
+           "Fantástica Fábrica de Chocolates"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/hfZ9oWRkkZ9YY/giphy.gif",
+        "title": "",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/1RxUgQKhpgYYo/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/IMSq59ySKydYQ/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/L2UdIWuCRbUL6/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/NplgHMpdHweyY/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FBIII8M4IDDi/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/Om2E6LgIWy8GA/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/BdeZCL5fkf3SU/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/9sVS967nejlqU/giphy.gif",
+        "title": "",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+           "",
+           "",
+           "",
+           ""
         ]
       }
+      
     ],
     "external": [
       ""
     ],
     "theme": {
       "colors": {
-        "primary": "#e91e63",
-        "secondary": "#f50057",
-        "mainBg": "#171B35",
+        "primary": "#f50057",
+        "secondary": "#ff1744",
+        "mainBg": "#2c387e",
+        "primaryQuiz": "#f50057",
+        "secondaryQuiz": "#ff1744",
+        "mainBgQuiz": "#ffa000",
         "contrastText": "#FFFFFF",
         "wrong": "#FF5722",
         "success": "#4CAF50"
