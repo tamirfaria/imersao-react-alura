@@ -40,6 +40,8 @@ export default function App({ Component, pageProps }) {
         <title>Quiz Hora de Aventura</title>
         <meta name="title" content="Quiz Hora de Aventura" />
         <meta name="description" content="Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?" />
+        <meta property="og:image" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg" />
+        <meta property="og:image:type" content="https://images8.alphacoders.com/442/thumb-1920-442432.jpg" />
         <link rel="shortcut icon" href="https://img.icons8.com/fluent/48/000000/bmo.png" />
 
         {/* <!-- Open Graph / Facebook --> */}
