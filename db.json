@@ -2,13 +2,13 @@
     "bg": "https://images8.alphacoders.com/442/thumb-1920-442432.jpg",
     "bgQuiz": "https://wallpaperaccess.com/full/3289.jpg",
     "icon": "https://img.icons8.com/fluent/48/000000/bmo.png",
-    "title": "Quiz CSS da Alura",
-    "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+    "title": "Quiz Hora de Aventura",
+    "description": "Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?",
     "questions": [
       {
         "image": "https://media.giphy.com/media/pO4UHglOY2vII/giphy.gif",
         "title": "Qual o nome do \"robô video-game\" amigo de Finn e Jake ?",
-        "description": "Dica: A origem de seu nome é a frase \"Be More\".",
+        "description": "",
         "answer": 2,
         "alternatives": [
           "Wall-E",
@@ -20,7 +20,7 @@
       {
         "image": "https://media.giphy.com/media/sIE0hveuiwCNG/giphy.gif",
         "title": "Como se chama o reino governado pela Princesa Jujuba?",
-        "description": "Se morasse no Brasil, provavelmente Princesa Jujuba seria uma das cientistas do Butantan.",
+        "description": "",
         "answer": 0,
         "alternatives": [
            "Reino Doce",
@@ -32,22 +32,22 @@
       {
         "image": "https://media.giphy.com/media/hfZ9oWRkkZ9YY/giphy.gif",
         "title": "Qual o intrumento musical tocado por Marceline?",
-        "description": "Será que Marceline \"toca Raul\"?",
+        "description": "",
         "answer": 2,
         "alternatives": [
            "Uma guitarra em forma de foice",
            "Uma gaita de fole flamejante",
-           "Um contrabaixo em forma de machado",
+           "Um baixo em forma de machado",
            "Uma harpa demoníaca"
         ]
       },
       {
         "image": "https://media.giphy.com/media/1RxUgQKhpgYYo/giphy.gif",
         "title": "Qual a unica forma de \"curar\" os caroços da espécie da Princesa Caroço?",
-        "description": "Ai meu caroço...",
+        "description": "",
         "answer": 3,
         "alternatives": [
-           "Comendo a torta de maça de Dona Tromba",
+           "Comendo as tortas de maça de Dona Tromba",
            "Seguindo as instruções do Enquirídio, o manual do herói",
            "Casando-se com o Rei Gelado",
            "Sentando em cima de uma esfera branca da Terra do Caroço"
@@ -81,7 +81,7 @@
         "image": "https://media.giphy.com/media/NplgHMpdHweyY/giphy.gif",
         "title": "Como nasceu Limãograb?",
         "description": "",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
            "De uma árvore mágica do Condado de Limãograb",
            "Ele foi a primeira experiencia da Princesa Jujuba que deu errado",
@@ -124,15 +124,6 @@
            "Brad",
            "Geraldo"
         ]
-      },
-      {
-        "image": "https://media.giphy.com/media/9sVS967nejlqU/giphy.gif",
-        "title": "Parabéns, você terminou o Quiz!",
-        "description": "",
-        "answer": 0,
-        "alternatives": [
-           "VER RESULTADO"
-        ]
       }
       
     ],
@@ -148,7 +139,7 @@
         "secondaryQuiz": "#ff1744",
         "mainBgQuiz": "#ffa000",
         "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
+        "wrong": "#FF002B",
         "success": "#4CAF50"
       },
       "borderRadius": "4px"

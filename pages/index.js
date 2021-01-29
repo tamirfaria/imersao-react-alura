@@ -25,6 +25,7 @@ export default function Home() {
           <Widget.Header>
             <h1>Quiz Hora de Aventura</h1>
           </Widget.Header>
+
           <Widget.Content>
             <form onSubmit={(event) => {
               event.preventDefault();
@@ -38,10 +39,11 @@ export default function Home() {
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar ${name}`}
+                {`Bora jogar, ${name}`}
               </Button>
             </form>
           </Widget.Content>
+
         </Widget>
 
         <Widget>
