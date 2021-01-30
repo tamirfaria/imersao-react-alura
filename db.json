@@ -1,6 +1,5 @@
 {
     "bg": "https://images8.alphacoders.com/442/thumb-1920-442432.jpg",
-    "bgQuiz": "https://wallpaperaccess.com/full/3289.jpg",
     "icon": "https://img.icons8.com/fluent/48/000000/bmo.png",
     "title": "Quiz Hora de Aventura",
     "description": "Que tal testar seus conhecimentos sobre todas as aventuras de Finn e Jake na Terra de Ooo?",
@@ -128,7 +127,8 @@
       
     ],
     "external": [
-      ""
+      "https://ghibliquiz.ygoryamanaca.vercel.app/",
+      "https://sotc-quiz.lucianowribeiro.vercel.app/ "
     ],
     "theme": {
       "colors": {

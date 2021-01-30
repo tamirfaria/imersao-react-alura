@@ -1,20 +1,21 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import GitHubCorner from '../src/components/GitHubCorner';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizContainer from '../src/components/QuizContainer';
-import AlternativesForm from '../src/components/AlternativesForm';
-import Button from '../src/components/Button';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizContainer from '../../src/components/QuizContainer';
+import AlternativesForm from '../../src/components/AlternativesForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
+import Button from '../../src/components/Button';
 
 function LoadingWidget() {
   return (
-    <Widget.Quiz>
-      <Widget.Quiz.Header>
+    <Widget>
+      <Widget.Header>
         <h1>Carregando...</h1>
-      </Widget.Quiz.Header>
+      </Widget.Header>
       <img
         alt="Descrição"
         style={{
@@ -24,16 +25,16 @@ function LoadingWidget() {
         }}
         src="https://media.giphy.com/media/aotWWaGrXuNuo/giphy.gif"
       />
-    </Widget.Quiz>
+    </Widget>
   );
 }
 
 function ResultedWidget({ results }) {
   return (
-    <Widget.Quiz>
-      <Widget.Quiz.Header>
+    <Widget>
+      <Widget.Header>
         <h1>Fim do Quiz!</h1>
-      </Widget.Quiz.Header>
+      </Widget.Header>
       <img
         alt="Descrição"
         style={{
@@ -43,8 +44,11 @@ function ResultedWidget({ results }) {
         }}
         src="https://media.giphy.com/media/wtgpiXTZKOyTS/giphy.gif"
       />
-      <Widget.Quiz.Content>
-        <p>
+      <Widget.Header>
+        <h1>⇩ Resultado do Quiz ⇩</h1>
+      </Widget.Header>
+      <Widget.Content>
+        <h1>
           {`
           Você acertou
           ${results.reduce((somatoriaAtual, resultAtual) => {
@@ -56,19 +60,22 @@ function ResultedWidget({ results }) {
           }, 0)}
           perguntas.
           `}
-        </p>
+        </h1>
         <ul>
           {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              {`
-              #0${index + 1} Resultado:
-              ${result === true ? 'Acertou' : 'Errou'}
-              `}
-            </li>
+            <Widget.Topic>
+              <li key={`result__${result}`}>
+                {`
+                Questão ${index + 1}:
+                ${result === true ? 'Acertou' : 'Errou'}
+                `}
+              </li>
+            </Widget.Topic>
           ))}
         </ul>
-      </Widget.Quiz.Content>
-    </Widget.Quiz>
+      </Widget.Content>
+    </Widget>
+
   );
 }
 
@@ -86,12 +93,13 @@ function QuestionWidget({
   const hasAlternativeSelected = selectedAlternative !== undefined;
 
   return (
-    <Widget.Quiz>
-      <Widget.Quiz.Header>
+    <Widget>
+      <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${questionTotal}`}
         </h3>
-      </Widget.Quiz.Header>
+      </Widget.Header>
       <img
         alt="Descrição"
         style={{
@@ -101,7 +109,7 @@ function QuestionWidget({
         }}
         src={question.image}
       />
-      <Widget.Quiz.Content>
+      <Widget.Content>
         <h2>
           {question.title}
         </h2>
@@ -126,7 +134,7 @@ function QuestionWidget({
             const alternativeStatus = isCorrect ? 'SUCCESS' : 'ERROR';
             const isSelected = selectedAlternative === alternativeIndex;
             return (
-              <Widget.Quiz.Topic
+              <Widget.Topic
                 as="label"
                 key={alternativeId}
                 htmlFor={alternativeId}
@@ -141,7 +149,7 @@ function QuestionWidget({
                   type="radio"
                 />
                 {alternative}
-              </Widget.Quiz.Topic>
+              </Widget.Topic>
             );
           })}
           <Button type="submit" disabled={!hasAlternativeSelected}>
@@ -170,8 +178,8 @@ function QuestionWidget({
             />
           )}
         </AlternativesForm>
-      </Widget.Quiz.Content>
-    </Widget.Quiz>
+      </Widget.Content>
+    </Widget>
   );
 }
 
@@ -212,9 +220,11 @@ export default function QuizPage() {
   }
 
   return (
-    <QuizBackground backgroundImage={db.bgQuiz}>
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <QuizLogo />
+        {/* eslint-disable-next-line jsx-a11y/alt-text */}
+        <img src="https://upload.wikimedia.org/wikipedia/pt/6/6f/Adventure_Time_logo.png" description="Logo Hora de Aventura" width="100%" height="100%" />
 
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
